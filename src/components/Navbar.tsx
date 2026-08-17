@@ -1,5 +1,7 @@
 import { useState, type Dispatch, type SetStateAction } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
+import type { Language } from '../locals';
+import { en, fa } from '../locals';
 
 type NavItem = {
     label: string;
@@ -11,18 +13,27 @@ type Theme = 'light' | 'dark';
 type NavbarProps = {
     theme: Theme;
     setTheme: Dispatch<SetStateAction<Theme>>;
+    language: Language;
+    setLanguage: Dispatch<SetStateAction<Language>>;
 };
 
-const navItems: NavItem[] = [
-    { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
-    { label: 'Skills', href: '#skills' },
-    { label: 'Projects', href: '#projects' },
-    { label: 'Contact', href: '#contact' },
-];
+export default function Navbar({
+    theme,
+    setTheme,
+    language,
+    setLanguage,
+}: NavbarProps) {
 
-export default function Navbar({ theme, setTheme }: NavbarProps) {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+    const translations = language === 'en' ? en : fa;
+
+    const navItems: NavItem[] = [
+    { label: translations.nav.home, href: '#home' },
+    { label: translations.nav.about, href: '#about' },
+    { label: translations.nav.skills, href: '#skills' },
+    { label: translations.nav.projects, href: '#projects' },
+    { label: translations.nav.contact, href: '#contact' },
+];
 
     return (
         <>
@@ -32,6 +43,7 @@ export default function Navbar({ theme, setTheme }: NavbarProps) {
                     <a
                         href="#home"
                         className="text-2xl font-bold text-primary dark:text-accent transition-colors"
+                        dir='ltr'
                     >
                         KM.
                     </a>
@@ -80,6 +92,18 @@ export default function Navbar({ theme, setTheme }: NavbarProps) {
                                     }`}
                                 />
                             </span>
+                        </button>
+
+                        <button
+                            type="button"
+                            onClick={() =>
+                                setLanguage((prev) =>
+                                    prev === 'en' ? 'fa' : 'en',
+                                )
+                            }
+                            className="cursor-pointer rounded-lg border border-secondary/50 px-3 py-2 text-sm font-medium text-primary-dark transition-colors duration-300 hover:bg-primary/10 hover:text-secondary dark:text-accent dark:hover:bg-primary outline-0"
+                        >
+                            {language === 'en' ? 'FA' : 'EN'}
                         </button>
 
                         <button
