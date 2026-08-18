@@ -25,6 +25,14 @@
 
 @font-face {
   font-family: "Roboto";
+  src: url("./assets/fonts/Roboto/Roboto-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
   src: url("./assets/fonts/Roboto/Roboto-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
@@ -43,6 +51,14 @@
   font-family: "Roboto";
   src: url("./assets/fonts/Roboto/Roboto-Bold.woff2") format("woff2");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("./assets/fonts/Vazirmatn/Vazirmatn-Thin.woff2") format("woff2");
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }

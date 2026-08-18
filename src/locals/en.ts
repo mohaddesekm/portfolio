@@ -8,6 +8,12 @@ export const en = {
     },
 
     hero: {
-        title: 'My Portfolio',
+        greeting: `Hello! I'm`,
+        name: 'Mohaddese',
+        family: 'Karimi',
+        stack: 'Frontend Developer',
+        description: 'I build modern and responsive web experiences.',
+        projectsButton: 'View Projects',
+        contactButton: 'Contact Me',
     },
 };

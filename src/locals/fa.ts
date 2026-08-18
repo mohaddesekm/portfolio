@@ -8,6 +8,12 @@ export const fa = {
     },
 
     hero: {
-        title: 'نمونه‌کارهای من',
+        greeting: 'سلام، من',
+        name: 'محدثه',
+        family: 'کریمی',
+        stack: 'توسعه‌دهنده فرانت‌اند',
+        description: 'وب‌سایت‌های مدرن و واکنش‌گرا طراحی و توسعه می‌دهم.',
+        projectsButton: 'مشاهده پروژه‌ها',
+        contactButton: 'تماس با من',
     },
 };

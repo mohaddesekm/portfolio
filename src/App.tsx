@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import type { Language } from './locals';
+import Hero from './components/Hero';
 
 type Theme = 'light' | 'dark';
 
@@ -14,7 +15,7 @@ export default function App() {
     }, [theme]);
 
     useEffect(() => {
-        document.documentElement.dir = language === 'fa' ? 'rtl' : 'ltr;';
+        document.documentElement.dir = language === 'fa' ? 'rtl' : 'ltr';
     }, [language]);
 
     return (
@@ -27,12 +28,7 @@ export default function App() {
             />
 
             <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
-                <section
-                    id="home"
-                    className="flex min-h-screen items-center justify-center"
-                >
-                    <h1 className="text-5xl font-bold">My Portfolio</h1>
-                </section>
+                <Hero language={language}/>
             </div>
         </main>
     );
