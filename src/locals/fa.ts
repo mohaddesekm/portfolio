@@ -16,4 +16,17 @@ export const fa = {
         projectsButton: 'مشاهده پروژه‌ها',
         contactButton: 'تماس با من',
     },
+
+    about: {
+        title: 'درباره من',
+        heading: 'کمی درباره من',
+        description:
+            'توسعه‌دهنده فرانت‌اند با تمرکز بر JavaScript و React و طراحی رابط کاربری ریسپانسیو می‌باشم. تجربه پیاده‌سازی پروژه‌های وب با Tailwind CSS و Hooks و React و React Router را دارم و در حال یادگیری TypeScript و nextjs هستم.',
+        Education: 'تحصیلات',
+        course: 'لیسانس فیزیک مهندسی',
+        univercity: 'دانشگاه اراک',
+        name: 'محدثه کریمی',
+        stack: 'توسعه‌دهنده فرانت‌اند',
+        resume: 'دانلود رزومه',
+    },
 };
