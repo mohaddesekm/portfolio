@@ -36,14 +36,14 @@ export default function Hero({ language }: HeroProps) {
                 <div className="mt-8 flex flex-wrap gap-4">
                     <a
                         href="#projects"
-                        className="rounded-lg bg-primary px-5 py-3 text-sm font-medium text-white transition-colors hover:bg-secondary"
+                        className="rounded-lg bg-primary px-5 py-3 text-sm font-medium text-accent transition-all hover:scale-105"
                     >
                         {translations.hero.projectsButton}
                     </a>
 
                     <a
                         href="#contact"
-                        className="rounded-lg border border-secondary px-5 py-3 text-sm font-medium text-primary transition-colors hover:bg-secondary/10 dark:text-accent"
+                        className="rounded-lg border border-secondary px-5 py-3 text-sm font-medium text-primary transition-all hover:bg-secondary/10 dark:text-accent hover:scale-105"
                     >
                         {translations.hero.contactButton}
                     </a>

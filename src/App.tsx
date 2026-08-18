@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import type { Language } from './locals';
 import Hero from './components/Hero';
+import About from './components/About';
 
 type Theme = 'light' | 'dark';
 
@@ -29,6 +30,7 @@ export default function App() {
 
             <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
                 <Hero language={language}/>
+                <About language={language}/>
             </div>
         </main>
     );
