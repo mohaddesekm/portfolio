@@ -41,7 +41,7 @@ export default function About({ language }: AboutProps) {
                         </p>
                         <p className=" mb-2">{translations.about.course}</p>
                         <p className="opacity-70">
-                            {translations.about.univercity}
+                            {translations.about.university}
                         </p>
                     </div>
                 </div>
