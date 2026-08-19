@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import type { Language } from './locals';
 import Hero from './components/Hero';
 import About from './components/About';
+import Projects from './components/Projects';
 
 type Theme = 'light' | 'dark';
 
@@ -29,8 +30,9 @@ export default function App() {
             />
 
             <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
-                <Hero language={language}/>
-                <About language={language}/>
+                <Hero language={language} />
+                <About language={language} />
+                <Projects language={language} />
             </div>
         </main>
     );
