@@ -82,8 +82,19 @@ export const en = {
                 githubUrl: 'https://github.com/mohaddesekm/sabzlearn-react',
                 demoUrl: 'https://sabzlearn-react-phi.vercel.app/',
                 image: '/img/Educational Website.png',
-                skills: ['React', 'React Router', 'Hooks','Fetch API','Context API','REST API', 'Responsive'],
+                skills: [
+                    'React',
+                    'React Router',
+                    'Hooks',
+                    'Fetch API',
+                    'Context API',
+                    'REST API',
+                    'Responsive',
+                ],
             },
         ],
+    },
+    skills: {
+        title:'Skills'
     },
 };

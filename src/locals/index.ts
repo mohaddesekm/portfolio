@@ -1,3 +1,5 @@
+import type { ReactNode } from 'react';
+
 export type Language = 'en' | 'fa';
 
 export { en } from './en';
@@ -11,4 +13,11 @@ export type Project = {
     demoUrl?: string;
     githubUrl: string;
     skills: string[];
+};
+
+export type SkillCategory = {
+    id: string;
+    titleKey: string;
+    skills: string[];
+    icon: ReactNode;
 };
