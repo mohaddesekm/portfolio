@@ -59,7 +59,7 @@ export default function About({ language }: AboutProps) {
                 <div dir='ltr' className='flex justify-between gap-2'>
                     <span className=" bg-accent dark:bg-primary rounded-full px-2 py-1">JavaScript</span>
                     <span className=" bg-accent dark:bg-primary rounded-full px-2 py-1">TypeScript</span>
-                    <span className=" bg-accent dark:bg-primary rounded-full px-2 py-1">NextJS</span>
+                    <span className=" bg-accent dark:bg-primary rounded-full px-2 py-1">Next.js</span>
                 </div>
                 <div className='flex gap-2 items-center bg-primary text-accent rounded-lg px-5 py-3 cursor-pointer hover:scale-105 transition-all shadow-md shadow-primary'>
                     <Download size={30}/>

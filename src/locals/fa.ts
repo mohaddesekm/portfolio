@@ -38,32 +38,32 @@ export const fa = {
         showLess: 'نمایش کمتر',
         demo: 'مشاهده پروژه',
 
-        item: [
+        items: [
             {
                 id: 1,
                 title: 'وب‌سایت شخصی',
                 description:
-                    'یک پورتفولیوی شخصی و ریسپانسیو ساخته‌شده با React، TypeScript و Tailwind CSS.',
+                    'یک وب‌سایت نمونه‌کار شخصی برای نمایش پروژه‌ها، مهارت‌ها، تجربیات و سوابق حرفه‌ای.',
                 githubUrl: 'https://github.com/mohaddesekm/portfolio',
                 // demoUrl: 'http://localhost:5173/#projects',
                 image: '/img/portfolio.png',
-                skills: ['React', 'TypeScript', 'Tailwind CSS'],
+                skills: ['React', 'TypeScript', 'Tailwind CSS', 'Responsive'],
             },
             {
                 id: 2,
                 title: 'فروشگاه قهوه',
                 description:
-                    'Built a modern, fully responsive Customized layouts using Tailwind CSS Dark/Light Mode featured LocalStorage',
+                    'یک وب‌اپلیکیشن کافی‌شاپ برای مشاهده و خرید محصولات قهوه که به کاربران امکان می‌دهد دسته‌بندی‌های مختلف را بررسی کنند، اقلام را به سبد خرید خود بیفزایند و سفارش ثبت کنند.',
                 githubUrl: 'https://github.com/mohaddesekm/coffee-shop',
                 demoUrl: 'https://coffee-shop-ajas.vercel.app/',
                 image: '/img/coffee shop.png',
-                skills: ['html', 'css', 'Tailwind CSS', 'Responsive'],
+                skills: ['html', 'css', 'Tailwind CSS', 'js', 'Responsive'],
             },
             {
                 id: 3,
                 title: 'تسک منیجر',
                 description:
-                    'یک تسک منیجر ساخته‌شده با React و TypeScript، با قابلیت Dark/Light Mode و ذخیره‌سازی در LocalStorage.',
+                    'یک برنامه تحت وب مدیریت وظایف که به کاربران امکان می‌دهد وظایف خود را ایجاد، تکمیل، حذف و فیلتر کنند.',
                 githubUrl: 'https://github.com/...',
                 demoUrl: 'https://task-manager-km.vercel.app/',
                 image: '/img/task manager.png',
@@ -72,13 +72,14 @@ export const fa = {
                     'React Hooks',
                     'Tailwind CSS',
                     'LocalStorage',
+                    'Responsive',
                 ],
             },
             {
                 id: 4,
                 title: 'وب سایت آموزشی',
                 description:
-                    'Developed a responsive website using React.js, React Router & state management via Hooks.',
+                    'یک پلتفرم آموزشی برای مرور و کاوش دوره‌های برنامه‌نویسی که به کاربران امکان می‌دهد دوره‌ها را پیدا کنند، جزئیات آن‌ها را مشاهده نمایند و به محتوای آموزشی دسترسی داشته باشند.',
                 githubUrl: 'https://github.com/mohaddesekm/sabzlearn-react',
                 demoUrl: 'https://sabzlearn-react-phi.vercel.app/',
                 image: '/img/Educational Website.png',
