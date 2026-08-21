@@ -9,7 +9,7 @@ type ProjectCardProps = {
 
 export default function ProjectCard({ project, demoLabel }: ProjectCardProps) {
     return (
-        <article className="group overflow-hidden rounded-xl border border-accent/10 bg-accent/5 transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-primary/10">
+        <article className="flex flex-col h-full group overflow-hidden rounded-xl border border-accent/10 bg-accent/5 transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-primary/10">
             {/* IMAGE */}
             <div className="h-52 overflow-hidden">
                 <img
@@ -19,12 +19,12 @@ export default function ProjectCard({ project, demoLabel }: ProjectCardProps) {
                 />
             </div>
 
-            {/* CONTECT */}
-            <div className="flex flex-col p-6">
-                <p className="mb-3 text-xl font-bold text-secondary">
+            {/* CONTENT */}
+            <div className="flex flex-col flex-1 p-6">
+                <h3 className="mb-3 text-xl font-bold text-secondary">
                     {project.title}
-                </p>
-                <p className="mb-6 min-h-20 text-sm leading-7 text-primary/70 dark:text-accent/70">
+                </h3>
+                <p className="mb-6 min-h-20 text-sm text-justify leading-7 text-primary/70 dark:text-accent/70">
                     {project.description}
                 </p>
 
@@ -49,7 +49,7 @@ export default function ProjectCard({ project, demoLabel }: ProjectCardProps) {
                         className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm text-accent transition-all hover:scale-105 hover:shadow-md hover:shadow-primary/30"
                     >
                         <LuGithub size={25} />
-                        Github
+                        GitHub
                     </a>
                     {project.demoUrl && (
                         <a

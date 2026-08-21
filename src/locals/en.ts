@@ -37,32 +37,32 @@ export const en = {
         showLess: 'Show Less',
         demo: 'Live Demo',
 
-        item: [
+        items: [
             {
                 id: 1,
                 title: 'Portfolio Website',
                 description:
-                    'A responsive personal portfolio built with React, TypeScript, and Tailwind CSS.',
+                    'A personal portfolio website for showcasing projects, skills, experience, and professional background.',
                 githubUrl: 'https://github.com/mohaddesekm/portfolio',
                 // demoUrl: 'http://localhost:5173/#projects',
                 image: '/img/portfolio.png',
-                skills: ['React', 'TypeScript', 'Tailwind CSS'],
+                skills: ['React', 'TypeScript', 'Tailwind CSS', 'Responsive'],
             },
             {
                 id: 2,
                 title: 'Coffee Shop',
                 description:
-                    'Built a modern, fully responsive Customized layouts using Tailwind CSS Dark/Light Mode featured LocalStorage',
+                    'A coffee shop web application for browsing and purchasing coffee products, allowing users to explore different categories, add items to their cart, and place orders.',
                 githubUrl: 'https://github.com/mohaddesekm/coffee-shop',
                 demoUrl: 'https://coffee-shop-ajas.vercel.app/',
                 image: '/img/coffee shop.png',
-                skills: ['html', 'css', 'Tailwind CSS', 'Responsive'],
+                skills: ['html', 'css', 'Tailwind CSS', 'js', 'Responsive'],
             },
             {
                 id: 3,
                 title: 'Task Manager',
                 description:
-                    'A task manager built with React and TypeScript, featuring dark/light mode and LocalStorage persistence.',
+                    'A task management web application that allows users to create, complete, delete, and filter their tasks.',
                 githubUrl: 'https://github.com/...',
                 demoUrl: 'https://task-manager-km.vercel.app/',
                 image: '/img/task manager.png',
@@ -71,17 +71,18 @@ export const en = {
                     'React Hooks',
                     'Tailwind CSS',
                     'LocalStorage',
+                    'Responsive',
                 ],
             },
             {
                 id: 4,
                 title: 'Educational Website',
                 description:
-                    'Developed a responsive website using React.js, React Router & state management via Hooks.',
+                    'A learning platform for browsing and exploring programming courses, allowing users to discover courses, view course details, and access educational content.',
                 githubUrl: 'https://github.com/mohaddesekm/sabzlearn-react',
                 demoUrl: 'https://sabzlearn-react-phi.vercel.app/',
                 image: '/img/Educational Website.png',
-                skills: ['React', 'React Router', 'Hooks', 'Responsive'],
+                skills: ['React', 'React Router', 'Hooks','Fetch API','Context API','REST API', 'Responsive'],
             },
         ],
     },

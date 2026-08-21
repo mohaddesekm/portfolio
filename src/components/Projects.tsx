@@ -2,6 +2,7 @@ import { useState } from 'react';
 import type { Language } from '../locals';
 import { en, fa } from '../locals';
 import ProjectCard from './ProjectCard';
+import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
 
 type ProjectsProps = {
     language: Language;
@@ -12,8 +13,8 @@ export default function Projects({ language }: ProjectsProps) {
 
     const [showAll, setShowAll] = useState(false);
     const visibleProjects = showAll
-        ? translations.projects.item
-        : translations.projects.item.slice(0, 3);
+        ? translations.projects.items
+        : translations.projects.items.slice(0, 3);
 
     return (
         <section className="pb-30">
@@ -38,14 +39,17 @@ export default function Projects({ language }: ProjectsProps) {
                 ))}
             </div>
 
-            <button
-                onClick={() => setShowAll((prev) => !prev)}
-                className="mt-10 block m-auto rounded-lg bg-primary px-6 py-3 font-medium text-accent transition-all hover:scale-105 hover:shadow-md hover:shadow-primary/30 cursor-pointer"
-            >
-                {showAll
-                    ? translations.projects.showLess
-                    : translations.projects.showAll}
-            </button>
+            {translations.projects.items.length > 3 && (
+                <button
+                    onClick={() => setShowAll((prev) => !prev)}
+                    className="flex items-center justify-center gap-2 mt-10 m-auto rounded-lg bg-primary px-6 py-3 font-medium text-accent transition-all hover:scale-105 hover:shadow-md hover:shadow-primary/30 cursor-pointer"
+                >
+                    {showAll
+                        ? translations.projects.showLess
+                        : translations.projects.showAll}
+                    {showAll ? <FaChevronUp /> : <FaChevronDown />}
+                </button>
+            )}
         </section>
     );
 }
