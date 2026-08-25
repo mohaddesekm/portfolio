@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 type Theme = 'light' | 'dark';
 
@@ -35,6 +36,7 @@ export default function App() {
                 <About language={language} />
                 <Projects language={language} />
                 <Skills language={language} />
+                <Contact language={language}/>
             </div>
         </main>
     );
