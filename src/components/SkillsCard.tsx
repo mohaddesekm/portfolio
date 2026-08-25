@@ -22,7 +22,7 @@ export default function SkillsCard({ title, icon, skills }: SkillsCardProps) {
             <div className="mt-auto flex flex-wrap gap-2">
                 {skills.map((skill) => (
                     <span
-                        className="rounded-full bg-accent/30 px-3 py-1 text-sm text-primary/60 transition-colors dark:bg-primary/30 dark:text-accent/50"
+                        className="rounded-full px-3 py-1 text-sm transition-colors bg-accent/20 text-primary/50 dark:bg-primary/20 dark:text-accent/30 "
                         key={skill}
                     >
                         {skill}
