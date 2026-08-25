@@ -12,10 +12,10 @@
 }
 
 @theme {
-  --color-primary-dark: #040D12;
-  --color-primary: #183D3D;
-  --color-secondary: #5C8374;
-  --color-accent: #93B1A6;
+  --color-primary-dark: #06101e;
+  --color-primary: #01497c;
+  --color-secondary: #2c7da0;
+  --color-accent: #a9d6e5;
 
   --color-light-bg: #F5F7F6;
   --color-light-surface: #FFFFFF;
@@ -89,6 +89,10 @@
 
 :root {
   font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html[dir='rtl'] {

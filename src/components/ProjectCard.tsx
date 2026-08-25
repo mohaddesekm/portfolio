@@ -33,7 +33,7 @@ export default function ProjectCard({ project, demoLabel }: ProjectCardProps) {
                     {project.skills.map((skill) => (
                         <span
                             key={skill}
-                            className="rounded-full bg-accent/30 px-3 py-1 text-sm text-primary/60 dark:bg-primary/30 dark:text-accent/40"
+                            className="rounded-full px-3 py-1 text-sm bg-accent/20 text-primary/50 dark:bg-primary/20 dark:text-accent/30"
                         >
                             {skill}
                         </span>
@@ -46,7 +46,7 @@ export default function ProjectCard({ project, demoLabel }: ProjectCardProps) {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm text-accent transition-all hover:scale-105 hover:shadow-md hover:shadow-primary/30"
+                        className="group flex items-center gap-2 rounded-lg border border-accent/10 bg-secondary/10 px-5 py-3 text-sm font-medium text-primary dark:text-accent transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer"
                     >
                         <LuGithub size={25} />
                         GitHub
@@ -56,7 +56,7 @@ export default function ProjectCard({ project, demoLabel }: ProjectCardProps) {
                             href={project.demoUrl}
                             target="_blank"
                             rel="noreferrer"
-                            className="flex items-center gap-2 rounded-lg bg-primary px-4 py-2 text-sm text-accent transition-all hover:scale-105 hover:shadow-md hover:shadow-primary/30"
+                            className="group flex items-center gap-2 rounded-lg border border-accent/10 bg-secondary/10 px-5 py-3 text-sm font-medium text-primary dark:text-accent transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer"
                         >
                             <ExternalLink size={25} />
                             {demoLabel}

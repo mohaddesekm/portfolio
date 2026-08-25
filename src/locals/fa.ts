@@ -21,7 +21,7 @@ export const fa = {
         title: 'درباره من',
         heading: 'کمی درباره من',
         description:
-            'توسعه‌دهنده فرانت‌اند با تمرکز بر JavaScript و React و طراحی رابط کاربری ریسپانسیو می‌باشم. تجربه پیاده‌سازی پروژه‌های وب با Tailwind CSS و Hooks و React و React Router را دارم و در حال یادگیری TypeScript و nextjs هستم.',
+            'توسعه‌دهنده فرانت‌اند با تمرکز بر JavaScript و React و طراحی رابط کاربری ریسپانسیو می‌باشم. تجربه پیاده‌سازی پروژه‌های وب با Tailwind CSS و Hooks و React و React Router را دارم و در حال یادگیری TypeScript و Next.js هستم.',
         Education: 'تحصیلات',
         course: 'لیسانس فیزیک مهندسی',
         university: 'دانشگاه اراک',
@@ -64,7 +64,8 @@ export const fa = {
                 title: 'تسک منیجر',
                 description:
                     'یک برنامه تحت وب مدیریت وظایف که به کاربران امکان می‌دهد وظایف خود را ایجاد، تکمیل، حذف و فیلتر کنند.',
-                githubUrl: 'https://github.com/...',
+                githubUrl:
+                    'https://github.com/mohaddesekm/react-hooks-task-manager',
                 demoUrl: 'https://task-manager-km.vercel.app/',
                 image: '/img/task manager.png',
                 skills: [
@@ -97,5 +98,7 @@ export const fa = {
     },
     skills: {
         title: 'مهارت‌ها',
+        description:
+            'متمرکز بر ساخت برنامه‌های وب مدرن، مقیاس‌پذیر و کاربرپسند.',
     },
 };

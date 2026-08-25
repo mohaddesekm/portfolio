@@ -17,13 +17,13 @@ export default function Projects({ language }: ProjectsProps) {
         : translations.projects.items.slice(0, 3);
 
     return (
-        <section className="pb-30">
+        <section id='projects' className="pb-45 scroll-mt-30">
             {/* HEAD */}
             <div className="mb-12">
                 <p className="mb-4 text-3xl font-bold text-primary dark:text-accent sm:text-4xl">
                     {translations.projects.title}
                 </p>
-                <p className="max-w-3xl text-primary/70 dark:text-accent/70 sm:text-lg text-justify">
+                <p className="max-w-3xl text-primary/60 dark:text-accent/40 sm:text-lg text-justify">
                     {translations.projects.description}
                 </p>
             </div>
@@ -42,7 +42,7 @@ export default function Projects({ language }: ProjectsProps) {
             {translations.projects.items.length > 3 && (
                 <button
                     onClick={() => setShowAll((prev) => !prev)}
-                    className="flex items-center justify-center gap-2 mt-10 m-auto rounded-lg bg-primary px-6 py-3 font-medium text-accent transition-all hover:scale-105 hover:shadow-md hover:shadow-primary/30 cursor-pointer"
+                    className="flex items-center justify-center gap-2 mt-10 m-auto rounded-lg border border-accent/10 bg-secondary/10 px-5 py-3 text-sm font-medium text-primary dark:text-accent transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer"
                 >
                     {showAll
                         ? translations.projects.showLess

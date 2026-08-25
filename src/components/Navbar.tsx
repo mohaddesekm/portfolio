@@ -23,17 +23,16 @@ export default function Navbar({
     language,
     setLanguage,
 }: NavbarProps) {
-
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
     const translations = language === 'en' ? en : fa;
 
     const navItems: NavItem[] = [
-    { label: translations.nav.home, href: '#home' },
-    { label: translations.nav.about, href: '#about' },
-    { label: translations.nav.skills, href: '#skills' },
-    { label: translations.nav.projects, href: '#projects' },
-    { label: translations.nav.contact, href: '#contact' },
-];
+        { label: translations.nav.home, href: '#home' },
+        { label: translations.nav.about, href: '#about' },
+        { label: translations.nav.projects, href: '#projects' },
+        { label: translations.nav.skills, href: '#skills' },
+        { label: translations.nav.contact, href: '#contact' },
+    ];
 
     return (
         <>
@@ -43,7 +42,7 @@ export default function Navbar({
                     <a
                         href="#home"
                         className="text-2xl font-bold text-primary dark:text-accent transition-colors"
-                        dir='ltr'
+                        dir="ltr"
                     >
                         KM.
                     </a>

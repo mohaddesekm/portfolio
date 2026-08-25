@@ -21,7 +21,7 @@ export const en = {
         title: 'About Me',
         heading: 'A little about me',
         description:
-            'Front-End Developer with a focus on JavaScript, React, and responsive UI design. Experienced in building web applications using React, React Router, Hooks, and Tailwind CSS. Currently learning TypeScript and nextjs.',
+            'Front-End Developer with a focus on JavaScript, React, and responsive UI design. Experienced in building web applications using React, React Router, Hooks, and Tailwind CSS. Currently learning TypeScript and Next.js.',
         Education: 'Education',
         course: 'BSc in Engineering Physics',
         university: 'Arak Univercity',
@@ -63,7 +63,8 @@ export const en = {
                 title: 'Task Manager',
                 description:
                     'A task management web application that allows users to create, complete, delete, and filter their tasks.',
-                githubUrl: 'https://github.com/...',
+                githubUrl:
+                    'https://github.com/mohaddesekm/react-hooks-task-manager',
                 demoUrl: 'https://task-manager-km.vercel.app/',
                 image: '/img/task manager.png',
                 skills: [
@@ -95,6 +96,8 @@ export const en = {
         ],
     },
     skills: {
-        title:'Skills'
+        title: 'Skills',
+        description:
+            'Focused on building modern, scalable, and user‑friendly webapplications.',
     },
 };
