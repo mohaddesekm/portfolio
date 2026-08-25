@@ -7,6 +7,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 type Theme = 'light' | 'dark';
 
@@ -36,7 +37,11 @@ export default function App() {
                 <About language={language} />
                 <Projects language={language} />
                 <Skills language={language} />
-                <Contact language={language}/>
+                <Contact language={language} />
+            </div>
+
+            <div className="mx-auto w-full border-t border-primary/20 dark:border-primary/30 bg-accent/15 dark:bg-accent/5 mt-8">
+                <Footer />
             </div>
         </main>
     );
