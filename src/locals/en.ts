@@ -100,4 +100,10 @@ export const en = {
         description:
             'Focused on building modern, scalable, and user‑friendly webapplications.',
     },
+    contact: {
+        title: 'Get In Touch',
+        description: 'Have a project in mind?',
+        description2: 'Let\'s build something useful.',
+        contactInfo : 'Contact Information'
+    },
 };

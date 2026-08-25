@@ -101,4 +101,11 @@ export const fa = {
         description:
             'متمرکز بر ساخت برنامه‌های وب مدرن، مقیاس‌پذیر و کاربرپسند.',
     },
+    contact: {
+        title: 'تماس با من',
+        description: 'پروژه داری؟',
+        description2: 'بیا با هم شروعش کنیم',
+                contactInfo : 'اطلاعات تماس'
+
+    },
 };
