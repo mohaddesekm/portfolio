@@ -89,10 +89,13 @@ export default function About({ language }: AboutProps) {
                     </div>
                 </ScrollReveal>
                 <ScrollReveal>
-                    <div className="group flex items-center gap-2 rounded-lg border border-accent/10 bg-secondary/20 px-5 py-3 text-sm font-medium text-primary dark:text-accent transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer">
+                    <a
+                    href='/Mohaddese-Karimi.pdf'
+                    download
+                    className="group flex items-center gap-2 rounded-lg border border-accent/10 bg-secondary/20 px-5 py-3 text-sm font-medium text-primary dark:text-accent transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer">
                         <Download size={30} />
                         <span>{translations.about.resume}</span>
-                    </div>
+                    </a>
                 </ScrollReveal>
             </div>
         </section>
