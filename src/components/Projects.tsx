@@ -3,6 +3,7 @@ import type { Language } from '../locals';
 import { en, fa } from '../locals';
 import ProjectCard from './ProjectCard';
 import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
+import ScrollReveal from './ScrollReveal';
 
 type ProjectsProps = {
     language: Language;
@@ -17,15 +18,19 @@ export default function Projects({ language }: ProjectsProps) {
         : translations.projects.items.slice(0, 3);
 
     return (
-        <section id='projects' className="pb-45 scroll-mt-30">
+        <section id="projects" className="pb-45 scroll-mt-30">
             {/* HEAD */}
             <div className="mb-12">
-                <p className="mb-4 text-3xl font-bold text-primary dark:text-accent sm:text-4xl">
-                    {translations.projects.title}
-                </p>
-                <p className="max-w-3xl text-primary/60 dark:text-accent/40 sm:text-lg text-justify">
-                    {translations.projects.description}
-                </p>
+                <ScrollReveal>
+                    <p className="mb-4 text-3xl font-bold text-primary dark:text-accent sm:text-4xl">
+                        {translations.projects.title}
+                    </p>
+                </ScrollReveal>
+                <ScrollReveal>
+                    <p className="max-w-3xl text-primary/60 dark:text-accent/40 sm:text-lg text-justify">
+                        {translations.projects.description}
+                    </p>
+                </ScrollReveal>
             </div>
 
             {/* CARD */}
@@ -40,15 +45,17 @@ export default function Projects({ language }: ProjectsProps) {
             </div>
 
             {translations.projects.items.length > 3 && (
-                <button
-                    onClick={() => setShowAll((prev) => !prev)}
-                    className="flex items-center justify-center gap-2 mt-10 m-auto rounded-lg border border-accent/10 bg-secondary/10 px-5 py-3 text-sm font-medium text-primary dark:text-accent transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer"
-                >
-                    {showAll
-                        ? translations.projects.showLess
-                        : translations.projects.showAll}
-                    {showAll ? <FaChevronUp /> : <FaChevronDown />}
-                </button>
+                <ScrollReveal>
+                    <button
+                        onClick={() => setShowAll((prev) => !prev)}
+                        className="flex items-center justify-center gap-2 mt-10 m-auto rounded-lg border border-accent/10 bg-secondary/10 px-5 py-3 text-sm font-medium text-primary dark:text-accent transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer"
+                    >
+                        {showAll
+                            ? translations.projects.showLess
+                            : translations.projects.showAll}
+                        {showAll ? <FaChevronUp /> : <FaChevronDown />}
+                    </button>
+                </ScrollReveal>
             )}
         </section>
     );
