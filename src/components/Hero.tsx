@@ -3,6 +3,7 @@ import { en, fa } from '../locals';
 import { LuGithub } from 'react-icons/lu';
 import { MdOutlineMailOutline } from 'react-icons/md';
 import { FaLinkedinIn } from 'react-icons/fa6';
+import { motion } from 'motion/react';
 
 type HeroProps = {
     language: Language;
@@ -11,19 +12,53 @@ type HeroProps = {
 export default function Hero({ language }: HeroProps) {
     const translations = language === 'en' ? en : fa;
 
+    const heroContentVariants = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.25,
+            },
+        },
+    };
+
+    const heroItemVariants = {
+        hidden: {
+            opacity: 0,
+            y: 30,
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.4,
+            },
+        },
+    };
+
     return (
         <section
             id="home"
-            className="text-center lg:text-left grid justify-center pt-55 pb-45 gap-12 lg:grid-cols-2"
+            className={`${translations === en ? 'lg:text-left' : 'lg:text-right'} text-center grid justify-center pt-55 pb-45 gap-12 lg:grid-cols-2`}
         >
             {/* HERO LEFT SECTION */}
 
-            <div className="w-full h-full">
-                <p className="mb-4 text-lg font-medium text-secondary">
+            <motion.div
+                variants={heroContentVariants}
+                initial="hidden"
+                animate="visible"
+                className="w-full h-full"
+            >
+                <motion.p
+                    variants={heroItemVariants}
+                    className="mb-4 text-lg font-medium text-secondary"
+                >
                     {language === 'en' && translations.hero.greeting}
-                </p>
+                </motion.p>
 
-                <h1 className="text-center text-4xl font-bold sm:text-6xl">
+                <motion.h1
+                    variants={heroItemVariants}
+                    className="text-center text-4xl font-bold sm:text-6xl"
+                >
                     <div className="flex flex-wrap items-center justify-center lg:justify-normal gap-2 text-primary/60 dark:text-accent">
                         {translations.hero.name}
 
@@ -31,17 +66,26 @@ export default function Hero({ language }: HeroProps) {
                             {translations.hero.family}
                         </span>
                     </div>
-                </h1>
+                </motion.h1>
 
-                <h2 className="mt-5 text-xl font-thin text-primary dark:text-accent sm:text-2xl opacity-90">
+                <motion.h2
+                    variants={heroItemVariants}
+                    className="mt-5 text-xl font-thin text-primary dark:text-accent sm:text-2xl opacity-90"
+                >
                     {translations.hero.stack}
-                </h2>
+                </motion.h2>
 
-                <p className="mt-6 text-[14px] leading-7 text-primary/70 dark:text-accent/70 sm:text-lg">
+                <motion.p
+                    variants={heroItemVariants}
+                    className="mt-6 text-[14px] leading-7 text-primary/70 dark:text-accent/70 sm:text-lg"
+                >
                     {translations.hero.description}
-                </p>
+                </motion.p>
 
-                <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-normal gap-8">
+                <motion.div
+                    variants={heroItemVariants}
+                    className="mt-8 flex flex-wrap items-center justify-center lg:justify-normal gap-8"
+                >
                     <div className="flex items-center justify-center gap-4">
                         <a
                             href="#projects"
@@ -84,14 +128,26 @@ export default function Hero({ language }: HeroProps) {
                             <FaLinkedinIn />
                         </a>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.div>
 
             {/* HERO RIGHT SECTION */}
 
-            <div
+            <motion.div
                 dir="ltr"
                 className="flex flex-col text-left p-6 max-w-xl rounded-lg border border-primary/20 bg-primary/5 dark:border-accent/10 dark:bg-primary-dark/50"
+                initial={{
+                    opacity: 0,
+                    y: 40,
+                }}
+                animate={{
+                    opacity: 1,
+                    y: 0,
+                }}
+                transition={{
+                    duration: 0.4,
+                    delay: 1,
+                }}
             >
                 <div className="flex items-center justify-between">
                     <div className="flex space-x-2">
@@ -144,7 +200,7 @@ export default function Hero({ language }: HeroProps) {
                     </div>
                     <div className="text-[#DD337F]">{'}'}</div>
                 </div>
-            </div>
+            </motion.div>
             {/* </div> */}
         </section>
     );
