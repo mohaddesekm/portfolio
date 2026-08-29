@@ -12,7 +12,8 @@ export const fa = {
         name: 'محدثه',
         family: 'کریمی',
         stack: 'توسعه‌دهنده فرانت‌اند',
-        description: 'وب‌سایت‌های مدرن و واکنش‌گرا طراحی و توسعه می‌دهم.',
+        description:
+            'توسعه‌دهنده فرانت‌اند، متخصص در React و برنامه‌های وب مدرن و واکنش‌گرا.',
         projectsButton: 'مشاهده پروژه‌ها',
         contactButton: 'تماس با من',
     },
@@ -21,7 +22,7 @@ export const fa = {
         title: 'درباره من',
         heading: 'کمی درباره من',
         description:
-            'توسعه‌دهنده فرانت‌اند با تمرکز بر JavaScript و React و طراحی رابط کاربری ریسپانسیو می‌باشم. تجربه پیاده‌سازی پروژه‌های وب با Tailwind CSS و Hooks و React و React Router را دارم و در حال یادگیری TypeScript و Next.js هستم.',
+            'توسعه‌دهنده فرانت‌اند، تمرکز بر ساخت برنامه‌های وب مدرن، واکنش‌گرا و کاربرپسند با جاوااسکریپت و ری‌اکت. با React Router، Hooks و Tailwind CSS تجربه دارم و در حال حاضر مهارت‌هایم را در TypeScript و Next.js گسترش می‌دهم.',
         Education: 'تحصیلات',
         course: 'لیسانس فیزیک مهندسی',
         university: 'دانشگاه اراک',
@@ -33,7 +34,7 @@ export const fa = {
     projects: {
         title: 'پروژه‌ها',
         description:
-            'در اینجا به برخی از پروژه‌هایی که روی آن‌ها کار کرده‌ام اشاره شده است.',
+            'گزیده‌ای از پروژه‌هایی که مهارت‌ها و تجربیات من را با فناوری‌های مدرن وب نشان می‌دهند.',
         showAll: 'نمایش بیشتر',
         showLess: 'نمایش کمتر',
         demo: 'مشاهده پروژه',
@@ -47,20 +48,49 @@ export const fa = {
                 githubUrl: 'https://github.com/mohaddesekm/portfolio',
                 // demoUrl: 'http://localhost:5173/#projects',
                 image: '/img/portfolio.png',
-                skills: ['React', 'TypeScript', 'Tailwind CSS', 'Responsive'],
+                skills: [
+                    'React',
+                    'TypeScript',
+                    'Tailwind CSS',
+                    'Responsive Design',
+                ],
             },
             {
                 id: 2,
                 title: 'فروشگاه قهوه',
                 description:
-                    'یک وب‌اپلیکیشن کافی‌شاپ برای مشاهده و خرید محصولات قهوه که به کاربران امکان می‌دهد دسته‌بندی‌های مختلف را بررسی کنند، اقلام را به سبد خرید خود بیفزایند و سفارش ثبت کنند.',
+                    'یک اپلیکیشن وب کافی‌شاپ که در آن کاربران می‌توانند محصولات قهوه را مرور کنند، دسته‌ها را بررسی کنند، اقلام را به سبد خرید خود اضافه کنند و سفارش دهند.',
                 githubUrl: 'https://github.com/mohaddesekm/coffee-shop',
                 demoUrl: 'https://coffee-shop-ajas.vercel.app/',
                 image: '/img/coffee shop.png',
-                skills: ['html', 'css', 'Tailwind CSS', 'js', 'Responsive'],
+                skills: [
+                    'HTML',
+                    'CSS',
+                    'Tailwind CSS',
+                    'JavaScript',
+                    'Responsive Design',
+                ],
             },
             {
                 id: 3,
+                title: 'وب سایت آموزشی',
+                description:
+                    'یک پلتفرم یادگیری که در آن کاربران می‌توانند دوره‌های برنامه‌نویسی را بررسی کنند، جزئیات دوره را مشاهده کنند و به محتوای آموزشی دسترسی پیدا کنند.',
+                githubUrl: 'https://github.com/mohaddesekm/sabzlearn-react',
+                demoUrl: 'https://sabzlearn-react-phi.vercel.app/',
+                image: '/img/Educational Website.png',
+                skills: [
+                    'React',
+                    'React Router',
+                    'Hooks',
+                    'Fetch API',
+                    'Context API',
+                    'REST API',
+                    'Responsive Design',
+                ],
+            },
+            {
+                id: 4,
                 title: 'تسک منیجر',
                 description:
                     'یک برنامه تحت وب مدیریت وظایف که به کاربران امکان می‌دهد وظایف خود را ایجاد، تکمیل، حذف و فیلتر کنند.',
@@ -73,25 +103,7 @@ export const fa = {
                     'React Hooks',
                     'Tailwind CSS',
                     'LocalStorage',
-                    'Responsive',
-                ],
-            },
-            {
-                id: 4,
-                title: 'وب سایت آموزشی',
-                description:
-                    'یک پلتفرم آموزشی برای مرور و کاوش دوره‌های برنامه‌نویسی که به کاربران امکان می‌دهد دوره‌ها را پیدا کنند، جزئیات آن‌ها را مشاهده نمایند و به محتوای آموزشی دسترسی داشته باشند.',
-                githubUrl: 'https://github.com/mohaddesekm/sabzlearn-react',
-                demoUrl: 'https://sabzlearn-react-phi.vercel.app/',
-                image: '/img/Educational Website.png',
-                skills: [
-                    'React',
-                    'React Router',
-                    'Hooks',
-                    'Fetch API',
-                    'Context API',
-                    'REST API',
-                    'Responsive',
+                    'Responsive Design',
                 ],
             },
         ],
@@ -103,9 +115,8 @@ export const fa = {
     },
     contact: {
         title: 'تماس با من',
-        description: 'پروژه داری؟',
-        description2: 'بیا با هم شروعش کنیم',
-                contactInfo : 'اطلاعات تماس'
-
+        description: 'علاقه‌مند به همکاری هستید؟',
+        description2: 'در صورت تمایل با من تماس بگیرید.',
+        contactInfo: 'اطلاعات تماس',
     },
 };

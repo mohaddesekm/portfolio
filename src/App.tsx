@@ -21,6 +21,7 @@ export default function App() {
 
     useEffect(() => {
         document.documentElement.dir = language === 'fa' ? 'rtl' : 'ltr';
+        document.documentElement.lang = language;
     }, [language]);
 
     return (

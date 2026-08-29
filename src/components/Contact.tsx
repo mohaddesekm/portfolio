@@ -16,9 +16,9 @@ export default function Contact({ language }: ContactProps) {
     return (
         <section id="contact" className="scroll-mt-30 pb-10">
             <ScrollReveal>
-                <h3 className="text-3xl font-bold text-primary dark:text-accent sm:text-4xl mb-8">
+                <h2 className="text-3xl font-bold text-primary dark:text-accent sm:text-4xl mb-8">
                     {translations.contact.title}
-                </h3>
+                </h2>
             </ScrollReveal>
 
             <div className="text-center group flex h-full flex-col rounded-xl border border-accent/70 bg-accent/5 p-10 transition-all duration-300 hover:border-accent hover:shadow-lg hover:shadow-primary/10">

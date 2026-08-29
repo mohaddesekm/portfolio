@@ -22,9 +22,9 @@ export default function Projects({ language }: ProjectsProps) {
             {/* HEAD */}
             <div className="mb-12">
                 <ScrollReveal>
-                    <p className="mb-4 text-3xl font-bold text-primary dark:text-accent sm:text-4xl">
+                    <h2 className="mb-4 text-3xl font-bold text-primary dark:text-accent sm:text-4xl">
                         {translations.projects.title}
-                    </p>
+                    </h2>
                 </ScrollReveal>
                 <ScrollReveal>
                     <p className="max-w-3xl text-primary/60 dark:text-accent/40 sm:text-lg text-justify">
