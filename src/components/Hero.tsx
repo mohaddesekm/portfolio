@@ -174,25 +174,31 @@ export default function Hero({ language }: HeroProps) {
                         ,
                     </div>
                     <div className="text-[#16A34A] text-sm pl-6">
-                        skills: <span className="text-[#DD337F]">[</span>
-                        <span className="text-[#FA9753]">'Git'</span> ,{' '}
-                        <span className="text-[#FA9753]">'Html'</span> ,{' '}
-                        <span className="text-[#FA9753]">'Css'</span> ,{' '}
-                        <span className="text-[#FA9753]">'JavaScript'</span> ,{' '}
-                        <span className="text-[#FA9753]">'TypeScript'</span> ,{' '}
-                        <span className="text-[#FA9753]">'React'</span> ,{' '}
-                        <span className="text-[#FA9753]">'Next.js'</span>{' '}
-                        <span className="text-[#DD337F]">]</span> ,{' '}
-                    </div>
-                    <div className="text-[#16A34A] text-sm pl-6">
                         focuses:{' '}
                         <span className="text-[#FA9753]">'Frontend'</span>{' '}
                         ,{' '}
                     </div>
                     <div className="text-[#16A34A] text-sm pl-6">
+                        skills: <span className="text-[#DD337F]">[</span>
+                        <span className="text-[#FA9753]">'Git'</span> ,{' '}
+                        <span className="text-[#FA9753]">'HTML'</span> ,{' '}
+                        <span className="text-[#FA9753]">'CSS'</span> ,{' '}
+                        <span className="text-[#FA9753]">'JavaScript'</span> ,{' '}
+                        <span className="text-[#FA9753]">'React'</span>
+                        <span className="text-[#DD337F]">]</span>,
+                    </div>
+                    <div className="text-[#16A34A] text-sm pl-6">
+                        learning: <span className="text-[#DD337F]">[</span>
+                        <span className="text-[#FA9753]">
+                            'TypeScript'
+                        </span> ,{' '}
+                        <span className="text-[#FA9753]">'Next.js'</span>{' '}
+                        <span className="text-[#DD337F]">]</span> ,{' '}
+                    </div>
+                    {/* <div className="text-[#16A34A] text-sm pl-6">
                         learning:{' '}
                         <span className="text-[#FA9753]">{" 'Always'"}</span> ,
-                    </div>
+                    </div> */}
                     <div className="text-[#16A34A] text-sm pl-6">
                         coffee:{' '}
                         <span className="text-[#FA9753]">{" 'Infinity'"}</span>{' '}

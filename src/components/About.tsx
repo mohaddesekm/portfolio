@@ -19,9 +19,9 @@ export default function About({ language }: AboutProps) {
                 <div className="grid grid-cols-1 gap-12 mb-8">
                     <div>
                         <ScrollReveal>
-                            <p className="text-3xl font-bold text-primary dark:text-accent sm:text-4xl mb-4">
+                            <h2 className="text-3xl font-bold text-primary dark:text-accent sm:text-4xl mb-4">
                                 {translations.about.title}
-                            </p>
+                            </h2>
                         </ScrollReveal>
 
                         <ScrollReveal>
@@ -62,7 +62,7 @@ export default function About({ language }: AboutProps) {
             <div className="flex flex-col gap-6 items-center justify-center">
                 <ScrollReveal>
                     <div className="w-45 rounded-full overflow-hidden border-2 border-accent">
-                        <img src="/img/mohaddese.jpg" alt="mohaddese" />
+                        <img src="/img/mohaddese.jpg" alt="Mohaddese Karimi" />
                     </div>
                 </ScrollReveal>
                 <ScrollReveal>
@@ -90,9 +90,10 @@ export default function About({ language }: AboutProps) {
                 </ScrollReveal>
                 <ScrollReveal>
                     <a
-                    href='/Mohaddese-Karimi.pdf'
-                    download
-                    className="group flex items-center gap-2 rounded-lg border border-accent/10 bg-secondary/20 px-5 py-3 text-sm font-medium text-primary dark:text-accent transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer">
+                        href="/Mohaddese-Karimi.pdf"
+                        download
+                        className="group flex items-center gap-2 rounded-lg border border-accent/10 bg-secondary/20 px-5 py-3 text-sm font-medium text-primary dark:text-accent transition-all duration-300 hover:-translate-y-1 hover:border-accent/30 hover:shadow-lg hover:shadow-primary/10 cursor-pointer"
+                    >
                         <Download size={30} />
                         <span>{translations.about.resume}</span>
                     </a>

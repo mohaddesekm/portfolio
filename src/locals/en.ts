@@ -12,7 +12,8 @@ export const en = {
         name: 'Mohaddese',
         family: 'Karimi',
         stack: 'Frontend Developer',
-        description: 'I build modern and responsive web experiences.',
+        description:
+            'Frontend Developer specializing in React and modern, responsive web applications.',
         projectsButton: 'View Projects',
         contactButton: 'Contact Me',
     },
@@ -21,10 +22,10 @@ export const en = {
         title: 'About Me',
         heading: 'A little about me',
         description:
-            'Front-End Developer with a focus on JavaScript, React, and responsive UI design. Experienced in building web applications using React, React Router, Hooks, and Tailwind CSS. Currently learning TypeScript and Next.js.',
+            'Frontend Developer focused on building modern, responsive, and user-friendly web applications with JavaScript and React. Experienced with React Router, Hooks, and Tailwind CSS, and currently expanding my skills in TypeScript and Next.js.',
         Education: 'Education',
         course: 'BSc in Engineering Physics',
-        university: 'Arak Univercity',
+        university: 'Arak University',
         name: 'Mohaddese Karimi',
         stack: 'Frontend Developer',
         resume: 'Download Resume',
@@ -32,7 +33,8 @@ export const en = {
 
     projects: {
         title: 'Projects',
-        description: `Here are some of the projects I've worked on, showcasing my skills in various technologies and problem domains.`,
+        description:
+            'A selection of projects that showcase my skills and experience with modern web technologies.',
         showAll: 'Show All',
         showLess: 'Show Less',
         demo: 'Live Demo',
@@ -46,20 +48,49 @@ export const en = {
                 githubUrl: 'https://github.com/mohaddesekm/portfolio',
                 // demoUrl: 'http://localhost:5173/#projects',
                 image: '/img/portfolio.png',
-                skills: ['React', 'TypeScript', 'Tailwind CSS', 'Responsive'],
+                skills: [
+                    'React',
+                    'TypeScript',
+                    'Tailwind CSS',
+                    'Responsive Design',
+                ],
             },
             {
                 id: 2,
                 title: 'Coffee Shop',
                 description:
-                    'A coffee shop web application for browsing and purchasing coffee products, allowing users to explore different categories, add items to their cart, and place orders.',
+                    'A coffee shop web application where users can browse coffee products, explore categories, add items to their cart, and place orders.',
                 githubUrl: 'https://github.com/mohaddesekm/coffee-shop',
                 demoUrl: 'https://coffee-shop-ajas.vercel.app/',
                 image: '/img/coffee shop.png',
-                skills: ['html', 'css', 'Tailwind CSS', 'js', 'Responsive'],
+                skills: [
+                    'HTML',
+                    'CSS',
+                    'Tailwind CSS',
+                    'JavaScript',
+                    'Responsive Design',
+                ],
             },
             {
                 id: 3,
+                title: 'Educational Website',
+                description:
+                    'A learning platform where users can explore programming courses, view course details, and access educational content.',
+                githubUrl: 'https://github.com/mohaddesekm/sabzlearn-react',
+                demoUrl: 'https://sabzlearn-react-phi.vercel.app/',
+                image: '/img/Educational Website.png',
+                skills: [
+                    'React',
+                    'React Router',
+                    'Hooks',
+                    'Fetch API',
+                    'Context API',
+                    'REST API',
+                    'Responsive Design',
+                ],
+            },
+            {
+                id: 4,
                 title: 'Task Manager',
                 description:
                     'A task management web application that allows users to create, complete, delete, and filter their tasks.',
@@ -72,25 +103,7 @@ export const en = {
                     'React Hooks',
                     'Tailwind CSS',
                     'LocalStorage',
-                    'Responsive',
-                ],
-            },
-            {
-                id: 4,
-                title: 'Educational Website',
-                description:
-                    'A learning platform for browsing and exploring programming courses, allowing users to discover courses, view course details, and access educational content.',
-                githubUrl: 'https://github.com/mohaddesekm/sabzlearn-react',
-                demoUrl: 'https://sabzlearn-react-phi.vercel.app/',
-                image: '/img/Educational Website.png',
-                skills: [
-                    'React',
-                    'React Router',
-                    'Hooks',
-                    'Fetch API',
-                    'Context API',
-                    'REST API',
-                    'Responsive',
+                    'Responsive Design',
                 ],
             },
         ],
@@ -98,12 +111,12 @@ export const en = {
     skills: {
         title: 'Skills',
         description:
-            'Focused on building modern, scalable, and user‑friendly webapplications.',
+            'Focused on building modern, scalable, and user‑friendly web applications.',
     },
     contact: {
         title: 'Get In Touch',
-        description: 'Have a project in mind?',
-        description2: 'Let\'s build something useful.',
-        contactInfo : 'Contact Information'
+        description: 'Interested in working together?',
+        description2: 'Feel free to get in touch.',
+        contactInfo: 'Contact Information',
     },
 };
