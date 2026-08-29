@@ -1,75 +1,190 @@
-# React + TypeScript + Vite
+# Mohaddese Karimi — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built to showcase my projects, skills, and experience as a Frontend Developer.
 
-Currently, two official plugins are available:
+The portfolio is designed with a focus on clean UI, responsive layouts, reusable React components, and a bilingual experience in English and Persian.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🌐 Live Demo
 
-## React Compiler
+**[View Portfolio](https://mohaddese-karimi.vercel.app/)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Preview
 
-## Expanding the ESLint configuration
+![Portfolio Preview](./public/screenshots/Mohaddese-Karimi-portfolio.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ✨ Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* 🌍 English and Persian language support
+* 🔄 RTL support for Persian
+* 🌓 Dark and Light mode
+* 📱 Fully responsive design
+* 🎨 Custom color theme and typography
+* ✨ Smooth animations and scroll reveal effects
+* 🧩 Reusable and modular React components
+* 💼 Projects showcase
+* 🛠️ Skills section with categorized technologies
+* 📄 Resume download
+* 📬 Contact and social links
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🛠️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Frontend
 
+* React
+* TypeScript
+* Tailwind CSS
+* Vite
+
+### Libraries & Tools
+
+* Motion
+* React Icons
+* Lucide React
+* Git
+* GitHub
+* Vercel
+
+## 📁 Project Structure
+
+```text
+src/
+├── components/
+│   ├── About.tsx
+│   ├── Contact.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── Navbar.tsx
+│   ├── ProjectCard.tsx
+│   ├── Projects.tsx
+│   ├── ScrollReveal.tsx
+│   ├── Skills.tsx
+│   └── SkillsCard.tsx
+│
+├── locals/
+│   ├── en.ts
+│   ├── fa.ts
+│   └── index.ts
+│
+├── App.tsx
+├── main.tsx
+└── index.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+To run the project locally, follow these steps.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clone the repository
 
+```bash
+git clone https://github.com/mohaddesekm/portfolio.git
 ```
+
+### 2. Navigate to the project directory
+
+```bash
+cd portfolio
+```
+
+### 3. Install dependencies
+
+```bash
+pnpm install
+```
+
+### 4. Start the development server
+
+```bash
+pnpm dev
+```
+
+The application will be available at the local development URL provided by Vite.
+
+## 📜 Available Scripts
+
+| Command        | Description                       |
+| -------------- | --------------------------------- |
+| `pnpm dev`     | Starts the development server     |
+| `pnpm build`   | Builds the project for production |
+| `pnpm preview` | Previews the production build     |
+| `pnpm lint`    | Runs ESLint                       |
+
+## 🌍 Internationalization
+
+The portfolio supports two languages:
+
+* **English** — default language
+* **Persian** — with RTL support
+
+Translations are separated into dedicated files to keep the content organized and make adding additional languages easier in the future.
+
+## 🎨 Design
+
+The portfolio uses a custom color palette and typography system to maintain a consistent visual identity throughout the application.
+
+### Fonts
+
+* **Roboto** — English
+* **Vazirmatn** — Persian
+
+### Color Palette
+
+```text
+#040D12
+#183D3D
+#5C8374
+#93B1A6
+```
+
+## 📱 Responsive Design
+
+The layout is designed to work across different screen sizes, including:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+Responsive Tailwind CSS utilities are used throughout the application to adapt layouts and spacing across breakpoints.
+
+## 📂 Sections
+
+The portfolio currently includes:
+
+* **Home** — Introduction and primary call-to-action
+* **About** — Background and personal information
+* **Projects** — Selected projects and technologies used
+* **Skills** — Technologies and development skills
+* **Contact** — Contact information and social links
+
+## 🚀 Deployment
+
+The project is deployed using **Vercel**.
+
+Every production update can be deployed directly from the GitHub repository through Vercel's deployment workflow.
+
+## 📚 Purpose
+
+This project was created not only as a personal portfolio, but also as a practical project for improving my skills in:
+
+* React
+* TypeScript
+* Tailwind CSS
+* Component-based architecture
+* Responsive web development
+* Git and GitHub workflows
+* Frontend UI/UX
+* Internationalization
+
+## 📬 Contact
+
+If you'd like to connect or discuss a project, feel free to reach out.
+
+* **Portfolio:** [mohaddese-karimi.vercel.app](https://mohaddese-karimi.vercel.app/)
+* **Email:** [mhaddese@gmail.com](mailto:mhaddese@gmail.com)
+* **GitHub:** [github.com/mohaddesekm](https://github.com/mohaddesekm)
+* **Telegram:** [@mohaddesekm](https://t.me/mohaddesekm)
+
+## 📄 License
+
+This project is personal and created for portfolio purposes.
