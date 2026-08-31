@@ -29,8 +29,8 @@ export default function Navbar({
     const navItems: NavItem[] = [
         { label: translations.nav.home, href: '#home' },
         { label: translations.nav.about, href: '#about' },
-        { label: translations.nav.projects, href: '#projects' },
         { label: translations.nav.skills, href: '#skills' },
+        { label: translations.nav.projects, href: '#projects' },
         { label: translations.nav.contact, href: '#contact' },
     ];
 
