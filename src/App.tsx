@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import './App.css';
 import Navbar from './components/Navbar';
 import type { Language } from './locals';
 import Hero from './components/Hero';
@@ -45,8 +44,8 @@ export default function App() {
             <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
                 <Hero language={language} />
                 <About language={language} />
-                <Projects language={language} />
                 <Skills language={language} />
+                <Projects language={language} />
                 <Contact language={language} />
             </div>
 

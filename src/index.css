@@ -1,16 +1,6 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
-@keyframes theme-icon-rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(180deg);
-  }
-}
-
 @theme {
   --color-primary-dark: #06101e;
   --color-primary: #01497c;
@@ -19,8 +9,6 @@
 
   --color-light-bg: #F5F7F6;
   --color-light-surface: #FFFFFF;
-
-  --animate-theme-icon: theme-icon-rotate 0.5s ease-in-out;
 }
 
 @font-face {
