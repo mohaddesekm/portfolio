@@ -12,11 +12,20 @@ import Footer from './components/Footer';
 type Theme = 'light' | 'dark';
 
 export default function App() {
-    const [theme, setTheme] = useState<Theme>('dark');
+    const [theme, setTheme] = useState<Theme>(() => {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light' || savedTheme === 'dark') {
+            return savedTheme;
+        }
+        return 'dark';
+    });
+
     const [language, setLanguage] = useState<Language>('en');
 
     useEffect(() => {
         document.documentElement.classList.toggle('dark', theme === 'dark');
+
+        localStorage.setItem('theme', theme);
     }, [theme]);
 
     useEffect(() => {
