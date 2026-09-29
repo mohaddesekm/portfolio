@@ -35,7 +35,7 @@ export const skillCategories: SkillCategory[] = [
         skills: [
             'React Hooks',
             'Component-Based Architecture',
-            'Data Fetching & Catching',
+            'Data Fetching & Caching',
             'REST API',
         ],
         icon: <GoWorkflow />,
@@ -46,7 +46,7 @@ export const skillCategories: SkillCategory[] = [
         skills: [
             'Git',
             'GitHub',
-            'Version Control Workflow (Branches, commits, ...)',
+            'Git Workflow',
             'VS Code',
             'Chrome DevTools',
             'pnpm',
