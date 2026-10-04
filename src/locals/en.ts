@@ -57,6 +57,22 @@ export const en = {
             },
             {
                 id: 2,
+                title: 'Real Estate',
+                description:
+                    'A real estate web application built with Next.js, featuring property search, sorting, dynamic pagination, and individual property details. This project was developed to practice Next.js and Pages Router concepts through a real-world application.',
+                githubUrl: 'https://github.com/mohaddesekm/real-estate',
+                demoUrl: 'https://real-estate-blue-theta.vercel.app/',
+                image: '/img/real-estate.png',
+                skills: [
+                    'Next.js',
+                    'React',
+                    'JavaScript',
+                    'CSS',
+                    'Font Awesome',
+                ],
+            },
+            {
+                id: 3,
                 title: 'Coffee Shop',
                 description:
                     'A coffee shop web application where users can browse coffee products, explore categories, add items to their cart, and place orders.',
@@ -72,7 +88,7 @@ export const en = {
                 ],
             },
             {
-                id: 3,
+                id: 4,
                 title: 'Educational Website',
                 description:
                     'A learning platform where users can explore programming courses, view course details, and access educational content.',
@@ -90,7 +106,7 @@ export const en = {
                 ],
             },
             {
-                id: 4,
+                id: 5,
                 title: 'Task Manager',
                 description:
                     'A task management web application that allows users to create, complete, delete, and filter their tasks.',
