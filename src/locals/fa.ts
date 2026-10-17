@@ -55,22 +55,22 @@ export const fa = {
                     'Responsive Design',
                 ],
             },
-            {
-                id: 2,
-                title: 'وب‌اپلیکیشن املاک',
-                description:
-                    'یک وب‌اپلیکیشن املاک ساخته‌شده با Next.js که امکان مشاهده، جستجو، مرتب‌سازی و صفحه‌بندی لیست املاک و مشاهده جزئیات هر ملک را فراهم می‌کند. این پروژه با هدف یادگیری و پیاده‌سازی مفاهیم Next.js و Pages Router در قالب یک پروژه واقعی توسعه داده شده است.',
-                githubUrl: 'https://github.com/mohaddesekm/real-estate',
-                demoUrl: 'https://real-estate-blue-theta.vercel.app/',
-                image: '/img/real-estate.png',
-                skills: [
-                    'Next.js',
-                    'React',
-                    'JavaScript',
-                    'CSS',
-                    'Font Awesome',
-                ],
-            },
+            // {
+            //     id: 2,
+            //     title: 'وب‌اپلیکیشن املاک',
+            //     description:
+            //         'یک وب‌اپلیکیشن املاک ساخته‌شده با Next.js که امکان مشاهده، جستجو، مرتب‌سازی و صفحه‌بندی لیست املاک و مشاهده جزئیات هر ملک را فراهم می‌کند. این پروژه با هدف یادگیری و پیاده‌سازی مفاهیم Next.js و Pages Router در قالب یک پروژه واقعی توسعه داده شده است.',
+            //     githubUrl: 'https://github.com/mohaddesekm/real-estate',
+            //     demoUrl: 'https://real-estate-blue-theta.vercel.app/',
+            //     image: '/img/real-estate.png',
+            //     skills: [
+            //         'Next.js',
+            //         'React',
+            //         'JavaScript',
+            //         'CSS',
+            //         'Font Awesome',
+            //     ],
+            // },
             {
                 id: 3,
                 title: 'فروشگاه قهوه',

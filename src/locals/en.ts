@@ -55,22 +55,22 @@ export const en = {
                     'Responsive Design',
                 ],
             },
-            {
-                id: 2,
-                title: 'Real Estate',
-                description:
-                    'A real estate web application built with Next.js, featuring property search, sorting, dynamic pagination, and individual property details. This project was developed to practice Next.js and Pages Router concepts through a real-world application.',
-                githubUrl: 'https://github.com/mohaddesekm/real-estate',
-                demoUrl: 'https://real-estate-blue-theta.vercel.app/',
-                image: '/img/real-estate.png',
-                skills: [
-                    'Next.js',
-                    'React',
-                    'JavaScript',
-                    'CSS',
-                    'Font Awesome',
-                ],
-            },
+            // {
+            //     id: 2,
+            //     title: 'Real Estate',
+            //     description:
+            //         'A real estate web application built with Next.js, featuring property search, sorting, dynamic pagination, and individual property details. This project was developed to practice Next.js and Pages Router concepts through a real-world application.',
+            //     githubUrl: 'https://github.com/mohaddesekm/real-estate',
+            //     demoUrl: 'https://real-estate-blue-theta.vercel.app/',
+            //     image: '/img/real-estate.png',
+            //     skills: [
+            //         'Next.js',
+            //         'React',
+            //         'JavaScript',
+            //         'CSS',
+            //         'Font Awesome',
+            //     ],
+            // },
             {
                 id: 3,
                 title: 'Coffee Shop',
