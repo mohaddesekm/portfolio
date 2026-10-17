@@ -22,7 +22,8 @@ export const en = {
         title: 'About Me',
         heading: 'A little about me',
         description:
-            'Frontend Developer focused on building modern, responsive, and user-friendly web applications with JavaScript and React. Experienced with React Router, Hooks, and Tailwind CSS, and currently expanding my skills in TypeScript and Next.js.',
+        `I'm a passionate Frontend Developer focused on building modern, user-friendly web applications. I enjoy solving problems, improving my skills, and creating valuable digital products.`
+        ,
         Education: 'Education',
         course: 'BSc in Engineering Physics',
         university: 'Arak University',
@@ -131,8 +132,13 @@ export const en = {
     },
     contact: {
         title: 'Get In Touch',
-        description: 'Interested in working together?',
-        description2: 'Feel free to get in touch.',
+        description: `Let's build something valuable`,
+        description2: `I'm looking for opportunities where I can contribute, improve my skills and grow with a professional development team.`,
         contactInfo: 'Contact Information',
     },
+    footer:{
+        name:'Mohaddese Karimi',
+        description:
+        'Frontend Developer with experience React.js, Next.js, TypeScript, and modern web technologies. Passionate about building clean, responsive, and high-performance web applications.'
+    }
 };

@@ -111,14 +111,7 @@ export default function Hero({ language }: HeroProps) {
                         >
                             <LuGithub />
                         </a>
-                        <a
-                            href="mailto:mhaddese@gmail.com"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="text-primary/50 scale-150 hover:scale-180 hover:text-primary transition-all duration-300 dark:text-accent/40 dark:hover:text-accent"
-                        >
-                            <MdOutlineMailOutline />
-                        </a>
+
                         <a
                             href="https://www.linkedin.com/in/mohaddese-karimi-b22b5b415/"
                             target="_blank"
@@ -126,6 +119,15 @@ export default function Hero({ language }: HeroProps) {
                             className="text-primary/50 scale-150 hover:scale-180 hover:text-primary transition-all duration-300 dark:text-accent/40 dark:hover:text-accent"
                         >
                             <FaLinkedinIn />
+                        </a>
+
+                        <a
+                            href="mailto:mhaddese@gmail.com"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="text-primary/50 scale-150 hover:scale-180 hover:text-primary transition-all duration-300 dark:text-accent/40 dark:hover:text-accent"
+                        >
+                            <MdOutlineMailOutline />
                         </a>
                     </div>
                 </motion.div>
