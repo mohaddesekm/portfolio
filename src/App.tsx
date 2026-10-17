@@ -50,7 +50,7 @@ export default function App() {
             </div>
 
             <div className="mx-auto w-full border-t border-primary/20 dark:border-primary/30 bg-accent/15 dark:bg-accent/5 mt-8">
-                <Footer />
+                <Footer language={language} />
             </div>
         </main>
     );

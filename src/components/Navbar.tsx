@@ -36,7 +36,7 @@ export default function Navbar({
 
     return (
         <>
-            <header className="fixed top-0 left-0 z-50 w-full border-b border-primary/20 bg-white-90 backdrop-blur-md dark:bg-primary-dark/90 dark:border-primary/30">
+            <header className="fixed top-0 left-0 z-60 w-full border-b border-primary/20 bg-white-90 backdrop-blur-md dark:bg-primary-dark/90 dark:border-primary/30">
                 <nav className="mx-auto flex items-center justify-between px-4 sm:px-6 h-20 max-w-7xl lg:px-8">
                     {/* LOGO */}
                     <a
