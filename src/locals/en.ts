@@ -13,7 +13,7 @@ export const en = {
         family: 'Karimi',
         stack: 'Frontend Developer',
         description:
-            'Frontend Developer specializing in React and modern, responsive web applications.',
+            'Frontend Developer specializing in React and modern responsive web applications.',
         projectsButton: 'View Projects',
         contactButton: 'Contact Me',
     },
@@ -22,7 +22,7 @@ export const en = {
         title: 'About Me',
         heading: 'A little about me',
         description:
-        `I'm a passionate Frontend Developer focused on building modern, user-friendly web applications. I enjoy solving problems, improving my skills, and creating valuable digital products.`
+        `I'm a passionate Frontend Developer focused on building modern & user-friendly web applications. I enjoy solving problems, improving my skills and creating valuable digital products.`
         ,
         Education: 'Education',
         course: 'BSc in Engineering Physics',
@@ -128,7 +128,7 @@ export const en = {
     skills: {
         title: 'Skills',
         description:
-            'Focused on building modern, scalable, and user‑friendly web applications.',
+            'Focused on building modern, scalable and user‑friendly web applications.',
     },
     contact: {
         title: 'Get In Touch',
@@ -139,6 +139,6 @@ export const en = {
     footer:{
         name:'Mohaddese Karimi',
         description:
-        'Frontend Developer with experience React.js, Next.js, TypeScript, and modern web technologies. Passionate about building clean, responsive, and high-performance web applications.'
+        'Frontend Developer with experience React.js, Next.js, TypeScript and modern web technologies. Passionate about building clean, responsive and high-performance web applications.'
     }
 };
