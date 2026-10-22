@@ -27,7 +27,7 @@ export default function Contact({ language }: ContactProps) {
                         </p>
                     </ScrollReveal>
                     <ScrollReveal>
-                        <p>{translations.contact.description2}</p>
+                        <p className='text-primary/70 dark:text-accent/70'>{translations.contact.description2}</p>
                     </ScrollReveal>
                 </div>
                 <div dir="ltr">
