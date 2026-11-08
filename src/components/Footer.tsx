@@ -85,8 +85,8 @@ export default function Footer({ language }: FooterProps) {
             </div>
 
             <div className="text-center font-thin leading-7 border-t pt-6 border-secondary/20">
-                © 2026 Built pixel by pixel by Mohaddese ❤️ using TypeScript & Tailwind
-                CSS.
+                © {new Date().getFullYear()} Built pixel by pixel by Mohaddese
+                ❤️ using TypeScript & Tailwind CSS.
             </div>
         </footer>
     );
